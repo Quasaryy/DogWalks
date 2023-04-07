@@ -27,7 +27,7 @@ class CoreDataManager {
         return persistanseContainer
     }()
     
-    lazy var managedConext: NSManagedObjectContext = {
+    lazy var managedContext: NSManagedObjectContext = {
         let managedContext = persistanseContainer.viewContext
         
         return managedContext
@@ -35,7 +35,7 @@ class CoreDataManager {
     
     func save() {
         do {
-            try managedConext.save()
+            try managedContext.save()
         } catch let error as NSError {
             fatalError("Unresolved error \(error), \(error.userInfo)")
         }
