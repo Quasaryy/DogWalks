@@ -82,6 +82,7 @@ extension ViewController {
         navigationController?.navigationBar.standardAppearance = appereance
         navigationController?.navigationBar.scrollEdgeAppearance = appereance
         
+        navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.tintColor = .white
         title = "Walk List"
         navigationController?.navigationBar.prefersLargeTitles = true
